@@ -12,6 +12,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/jquery-modal/jquery.modal.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
     <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
@@ -26,6 +27,7 @@
     <!-- Custom styles for this template -->
     <link href="css/new-age.min.css" rel="stylesheet">
 
+    
   </head>
 
   <body id="page-top">
@@ -94,11 +96,12 @@
           <p> Click on the links below to get creative!</p>
           <hr>
         </div>
-
+        
+        <!-- Repl simply means Read–Eval–Print-Loop.-->
         <div class="row" style="margin-top: 80px;">
 
-            <div class="col-md-3">
-              <h1>Part 1: Scratch</h1>
+            <!-- <div class="col-md-3"> -->
+              <!-- <h1>Part 1: REPL.IT</h1>
               <p>Scratch is a simple and easy programming tool to create your own interactive stories, games, and animations.<br></p>
               <p><a class="btn btn-success" target="_scratch" href="https://scratch.mit.edu" role="button" >Go Scratch &raquo; </a></p>
               <p><a class="text-muted" target="_scratchppt" href="materials/part1-intro-to-coding-v2.pptx">Download<br>Scratch Training Notes</a></p>
@@ -106,8 +109,7 @@
             <div class="col-md-3">
               <h1>Part 2: REPL.IT</h1>
               <p>Repl.it is an online tool that allows us to practice simple to advanced coding examples. <br><br></p> 
-                <!-- Repl simply means Read–Eval–Print-Loop.-->
-              <p><a class="btn btn-success" target="_repl" href="https://repl.it/@rebot" role="button">Go Repl.it &raquo; </a></p>
+              <p><a class="btn btn-success" target="_repl" href="https://repl.it/MgT5/latest/512430" role="button">Go Repl.it &raquo; </a></p>
               <p><a class="text-muted" target="_htmlppt" href="materials/part2-basic-html.pptx">Download<br>Basic HTML Notes</a></p>
            </div>
            <div class="col-md-3">
@@ -119,14 +121,30 @@
              <h1>Part 4: Rebot</h1>
              <p>Rebot is a chatbot you can interact with to retrieve interesting information.<br><br></p>
              <p><a class="btn btn-primary" target="_rebot" href="https://testbotv.southeastasia.cloudapp.azure.com" role="button">Go Rebot &raquo; </a></p>
-           </div>
+           </div> -->
 
+        <div class="col-md-4">
+          <h1>Part 1: Repl.It</h1>
+          <p>Repl.It is a simple online script editor that lets you write and run basic python code.</p>
+          <p><strong>Download the <a class="text-primary" target="_scratchppt" href="materials/part1-intro-to-coding-v2.pptx">training notes</a> here</strong></p>
+          <p><a class="btn btn-danger btn-xl" target="_repl" href="https://repl.it/MgT5/latest/512430" role="button">Visit Repl.it</a></p>
+          
+        </div>
+        <div class="col-md-4">
+           <h1>Part 2: Jupyter</h1>
+           <p>Jupyter is an advanced Python editor that we have integrated with Rebot.</p>
+           <p>&nbsp;</p>
+           <p><a class="btn btn-success btn-xl" href="#jupyterteams" rel="modal:open" role="button">Visit Jupyter</a></p>
+           <!-- <p><a class="btn btn-success" target="_jupyter" href="http://128.199.72.227:8000/user/user/tree/chat-mvp1/chatapp" role="button">Visit Jupyter</a></p> -->
+         </div>
+         <div class="col-md-4">
+           <h1>Part 3: Rebot</h1>
+           <p>Rebot is a chatbot that helps you explore conversational UX first-hand.</p>
+           <p>&nbsp;</p>
+           <p><a class="btn btn-success btn-xl" target="_rebot" href="https://testbotv.southeastasia.cloudapp.azure.com" role="button">Visit Rebot</a></p>
+         </div>
 
-            <!-- <div class="badges">
-              <a class="badge-link" href="https://testbotv.southeastasia.cloudapp.azure.com"><img src="img/badge-rebot.svg" alt=""></a>
-              <a class="badge-link" href="http://128.199.72.227:8000" target="_blank"><img src="img/badge-jupyter.svg" alt=""></a>
-            </div> -->
-          </div>
+        </div>
         </div>
       </div>
     </section>
@@ -134,8 +152,8 @@
     <section class="features" id="training">
       <div class="container">
         <div class="section-heading text-center">
-          <h2>Training Notes</h2>
-          <p class="text-muted">We have brought together some useful guides and cheat sheets to help you!</p>
+          <h2>Training Overview</h2>
+          <p class="text-muted">We have put together some useful guides and cheat sheets to help you!</p>
           <hr>
         </div>
         <div class="row">
@@ -217,10 +235,76 @@
       </div>
     </footer>
 
+    <div id="jupyterteams" class="modal">
+      <div class="row">
+          <div class="col-md-4">
+            <h1>Group A</h1>
+            <div class="row">
+                <div class="col-md-5"><a class="text-primary" target="_jupyter" href="http://128.199.72.227:8000/user/user/tree/chat-mvp1/chatapp" role="button">Team A1</a></div>
+                <div class="col-md-5"><a class="text-primary" target="_jupyter" href="http://128.199.72.227:8000/user/user/tree/chat-mvp1/chatapp" role="button">Team A2</a></div>
+                <div class="col-md-5"><a class="text-primary" target="_jupyter" href="http://128.199.72.227:8000/user/user/tree/chat-mvp1/chatapp" role="button">Team A3</a></div>
+                <div class="col-md-5"><a class="text-primary" target="_jupyter" href="http://128.199.72.227:8000/user/user/tree/chat-mvp1/chatapp" role="button">Team A4</a></div>
+                <div class="col-md-5"><a class="text-primary" target="_jupyter" href="http://128.199.72.227:8000/user/user/tree/chat-mvp1/chatapp" role="button">Team A5</a></div>
+                <div class="col-md-5"><a class="text-primary" target="_jupyter" href="http://128.199.72.227:8000/user/user/tree/chat-mvp1/chatapp" role="button">Team A6</a></div>
+                <div class="col-md-5"><a class="text-primary" target="_jupyter" href="http://128.199.72.227:8000/user/user/tree/chat-mvp1/chatapp" role="button">Team A7</a></div>
+                <div class="col-md-5"><a class="text-primary" target="_jupyter" href="http://128.199.72.227:8000/user/user/tree/chat-mvp1/chatapp" role="button">Team A8</a></div>
+                <div class="col-md-5"><a class="text-primary" target="_jupyter" href="http://128.199.72.227:8000/user/user/tree/chat-mvp1/chatapp" role="button">Team A9</a></div>
+                <div class="col-md-5"><a class="text-primary" target="_jupyter" href="http://128.199.72.227:8000/user/user/tree/chat-mvp1/chatapp" role="button">Team A10</a></div>
+                <div class="col-md-5"><a class="text-primary" target="_jupyter" href="http://128.199.72.227:8000/user/user/tree/chat-mvp1/chatapp" role="button">Team A11</a></div>
+                <div class="col-md-5"><a class="text-primary" target="_jupyter" href="http://128.199.72.227:8000/user/user/tree/chat-mvp1/chatapp" role="button">Team A12</a></div>
+                <div class="col-md-5"><a class="text-primary" target="_jupyter" href="http://128.199.72.227:8000/user/user/tree/chat-mvp1/chatapp" role="button">Team A13</a></div>
+                <div class="col-md-5"><a class="text-primary" target="_jupyter" href="http://128.199.72.227:8000/user/user/tree/chat-mvp1/chatapp" role="button">Team A14</a></div>
+                <div class="col-md-5"><a class="text-primary" target="_jupyter" href="http://128.199.72.227:8000/user/user/tree/chat-mvp1/chatapp" role="button">Team A15</a></div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <h1>Group B</h1>
+            <div class="row">
+                <div class="col-md-5"><a class="text-primary" target="_jupyter" href="http://128.199.72.227:8000/user/user/tree/chat-mvp1/chatapp" role="button">Team B1</a></div>
+                <div class="col-md-5"><a class="text-primary" target="_jupyter" href="http://128.199.72.227:8000/user/user/tree/chat-mvp1/chatapp" role="button">Team B2</a></div>
+                <div class="col-md-5"><a class="text-primary" target="_jupyter" href="http://128.199.72.227:8000/user/user/tree/chat-mvp1/chatapp" role="button">Team B3</a></div>
+                <div class="col-md-5"><a class="text-primary" target="_jupyter" href="http://128.199.72.227:8000/user/user/tree/chat-mvp1/chatapp" role="button">Team B4</a></div>
+                <div class="col-md-5"><a class="text-primary" target="_jupyter" href="http://128.199.72.227:8000/user/user/tree/chat-mvp1/chatapp" role="button">Team B5</a></div>
+                <div class="col-md-5"><a class="text-primary" target="_jupyter" href="http://128.199.72.227:8000/user/user/tree/chat-mvp1/chatapp" role="button">Team B6</a></div>
+                <div class="col-md-5"><a class="text-primary" target="_jupyter" href="http://128.199.72.227:8000/user/user/tree/chat-mvp1/chatapp" role="button">Team B7</a></div>
+                <div class="col-md-5"><a class="text-primary" target="_jupyter" href="http://128.199.72.227:8000/user/user/tree/chat-mvp1/chatapp" role="button">Team B8</a></div>
+                <div class="col-md-5"><a class="text-primary" target="_jupyter" href="http://128.199.72.227:8000/user/user/tree/chat-mvp1/chatapp" role="button">Team B9</a></div>
+                <div class="col-md-5"><a class="text-primary" target="_jupyter" href="http://128.199.72.227:8000/user/user/tree/chat-mvp1/chatapp" role="button">Team B10</a></div>
+                <div class="col-md-5"><a class="text-primary" target="_jupyter" href="http://128.199.72.227:8000/user/user/tree/chat-mvp1/chatapp" role="button">Team B11</a></div>
+                <div class="col-md-5"><a class="text-primary" target="_jupyter" href="http://128.199.72.227:8000/user/user/tree/chat-mvp1/chatapp" role="button">Team B12</a></div>
+                <div class="col-md-5"><a class="text-primary" target="_jupyter" href="http://128.199.72.227:8000/user/user/tree/chat-mvp1/chatapp" role="button">Team B13</a></div>
+                <div class="col-md-5"><a class="text-primary" target="_jupyter" href="http://128.199.72.227:8000/user/user/tree/chat-mvp1/chatapp" role="button">Team B14</a></div>
+                <div class="col-md-5"><a class="text-primary" target="_jupyter" href="http://128.199.72.227:8000/user/user/tree/chat-mvp1/chatapp" role="button">Team B15</a></div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <h1>Group C</h1>
+            <div class="row">
+                <div class="col-md-5"><a class="text-primary" target="_jupyter" href="http://128.199.72.227:8000/user/user/tree/chat-mvp1/chatapp" role="button">Team C1</a></div>
+                <div class="col-md-5"><a class="text-primary" target="_jupyter" href="http://128.199.72.227:8000/user/user/tree/chat-mvp1/chatapp" role="button">Team C2</a></div>
+                <div class="col-md-5"><a class="text-primary" target="_jupyter" href="http://128.199.72.227:8000/user/user/tree/chat-mvp1/chatapp" role="button">Team C3</a></div>
+                <div class="col-md-5"><a class="text-primary" target="_jupyter" href="http://128.199.72.227:8000/user/user/tree/chat-mvp1/chatapp" role="button">Team C4</a></div>
+                <div class="col-md-5"><a class="text-primary" target="_jupyter" href="http://128.199.72.227:8000/user/user/tree/chat-mvp1/chatapp" role="button">Team C5</a></div>
+                <div class="col-md-5"><a class="text-primary" target="_jupyter" href="http://128.199.72.227:8000/user/user/tree/chat-mvp1/chatapp" role="button">Team C6</a></div>
+                <div class="col-md-5"><a class="text-primary" target="_jupyter" href="http://128.199.72.227:8000/user/user/tree/chat-mvp1/chatapp" role="button">Team C7</a></div>
+                <div class="col-md-5"><a class="text-primary" target="_jupyter" href="http://128.199.72.227:8000/user/user/tree/chat-mvp1/chatapp" role="button">Team C8</a></div>
+                <div class="col-md-5"><a class="text-primary" target="_jupyter" href="http://128.199.72.227:8000/user/user/tree/chat-mvp1/chatapp" role="button">Team C9</a></div>
+                <div class="col-md-5"><a class="text-primary" target="_jupyter" href="http://128.199.72.227:8000/user/user/tree/chat-mvp1/chatapp" role="button">Team C10</a></div>
+                <div class="col-md-5"><a class="text-primary" target="_jupyter" href="http://128.199.72.227:8000/user/user/tree/chat-mvp1/chatapp" role="button">Team C11</a></div>
+                <div class="col-md-5"><a class="text-primary" target="_jupyter" href="http://128.199.72.227:8000/user/user/tree/chat-mvp1/chatapp" role="button">Team C12</a></div>
+                <div class="col-md-5"><a class="text-primary" target="_jupyter" href="http://128.199.72.227:8000/user/user/tree/chat-mvp1/chatapp" role="button">Team C13</a></div>
+                <div class="col-md-5"><a class="text-primary" target="_jupyter" href="http://128.199.72.227:8000/user/user/tree/chat-mvp1/chatapp" role="button">Team C14</a></div>
+                <div class="col-md-5"><a class="text-primary" target="_jupyter" href="http://128.199.72.227:8000/user/user/tree/chat-mvp1/chatapp" role="button">Team C15</a></div>
+            </div>
+          </div>
+      </div>      
+    </div>
+    
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/popper/popper.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/jquery-modal/jquery.modal.min.js"></script>
 
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
