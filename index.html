@@ -93,8 +93,8 @@
         <div class="section-heading text-center">
           <h2>Code the Future!</h2>
           <p>Lets get creative with Python. Python is a very simple programming language that can help you get started quickly!</p>
-          <p>Download the <a class="text-primary" target="_pythonppt" href="materials/python-code-training.pptx"><strong>training notes</strong></a> here, and follow the lesson plan below </p>
-          
+          <p>Download the <a class="text-primary" target="_pythonppt" href="materials/rebot-lesson-slides.pptx"><strong>training notes</strong></a> here, and follow the lesson plan below. </p>
+          <p class="text-muted">Note: Are you still using IE? If so, please take 1 min to install <a target="_chrome" class="text-primary"  href="https://www.google.com/chrome/browser/desktop/index.html">Google Chrome</a> to follow the lesson effectively.</p>
           <hr>
         </div>
         
@@ -219,6 +219,19 @@
     </footer>
 
     <div id="jupyterteams" class="modal">
+      <form action="http://139.59.221.95/hub/login" method="get" target="_jupyter">
+        <div class="form-group" >
+            <h3 class="display-5">Hello! How shall we identify you?</h3>
+            <small id="help" class="form-text text-muted pull-right">alphanumeric only</small>
+            <input type="text" class="form-control" name="user" pattern="[a-zA-Z0-9._\s]+" required maxlength="10" placeholder="Your NTid please"><br>
+            
+        </div>
+        <button type="submit" class="btn btn-success pull-right">Next</button> 
+      </form>
+
+    </div>
+
+    <!--div id="jupyterteams1" class="modal">
         <p>Please select your team below:</p>
         <div class="row">
           <div class="col-md-4">
@@ -282,7 +295,7 @@
             </div>
           </div>
       </div>      
-    </div>
+    </div-->
     
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
