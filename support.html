@@ -26,7 +26,6 @@
 function callReset() {
 	var resetUri = "http://139.59.231.81:5000/reset/" + document.getElementById('userid').value;
 	openWin(resetUri);
-	return false; // prevent the refresh
 }
 
 function callAPI(page, params) {
@@ -45,7 +44,7 @@ function openWin(url) {
     		<div class="jumbotron">
     			<h1 class="display-3">Rebot support</h1>
     			<p class="lead">Basic troubleshooting for a specific user.</p>
-		    	<form>
+		    	<form onsubmit="return false;">
 				  <div class="form-group">
 				    <input id="userid" class="form-control form-control-lg" type="text" placeholder="Please type in the userid">
 				  </div>
