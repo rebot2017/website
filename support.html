@@ -25,6 +25,7 @@
 function httpAsync(url, callback)
 {
     var xmlHttp = new XMLHttpRequest();
+    xmlHttp.setRequestHeader( 'Access-Control-Allow-Origin', '*');
     xmlHttp.onreadystatechange = function() { 
         if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
             callback(xmlHttp.responseText);
