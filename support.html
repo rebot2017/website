@@ -29,7 +29,7 @@ function httpAsync(url, callback)
         if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
             callback(xmlHttp.responseText);
     }
-    xmlHttp.open("GET", callback, true); // true for asynchronous 
+    xmlHttp.open("GET", url, true); // true for asynchronous 
     xmlHttp.send(null);
 }
 
@@ -38,7 +38,7 @@ function resetHandler(responseText) {
 }
 
 function callReset() {
-	alert("http://139.59.231.81:5000/reset/" + document.getElementById('userid').value);
+	
 	httpAsync("http://139.59.231.81:5000/reset/" + document.getElementById('userid').value, resetHandler);
 }
 
