@@ -22,35 +22,39 @@
 	    <link href="css/new-age.min.css" rel="stylesheet">
 
 <script>
-function httpAsync(url, callback)
-{
-    var xmlHttp = new XMLHttpRequest();
-    xmlHttp.onreadystatechange = function() { 
-        if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
-            callback(xmlHttp.responseText);
-    }
-    xmlHttp.open("GET", url, true); // true for asynchronous 
-    xmlHttp.setRequestHeader( 'Access-Control-Allow-Origin', '*');
-    xmlHttp.send(null);
-}
-
-function resetHandler(responseText) {
-	alert(responseText);
-}
-
+// Gotta do this way due to CORS. TODO: can resolve on jupyter server.
 function callReset() {
-	
-	httpAsync("http://139.59.231.81:5000/reset/" + document.getElementById('userid').value, resetHandler);
+	var resetUri = "http://139.59.231.81:5000/reset/" + document.getElementById('userid').value;
+	openWin(resetUri);
+}
+
+function callAPI(page, params) {
+	var apiUri = "http://139.59.231.81:5000/api/" + page + "/" + document.getElementById('userid').value + "?" + params;
+	openWin(apiUri);
+}
+
+function openWin(url) {
+	window.open(url, "modal","menubar=0,center=1,resizable=0,width=350,height=250,modal=1");
 }
 
 </script>
     </head>
     <body>
-    	<form>
-		  <div class="form-group">
-		    <input id="userid" class="form-control form-control-lg" type="text" placeholder="Please type in the userid">
-		  </div>
-		  <button type="button" class="btn btn-primary" onclick="callReset()">Reset Jupyter</button>
-		</form>
+    	<div class="container col-md-6 col-md-offset-3">
+    		<div class="jumbotron">
+    			<h1 class="display-3">Rebot support</h1>
+    			<p class="lead">Basic troubleshooting for a specific user.</p>
+		    	<form>
+				  <div class="form-group">
+				    <input id="userid" class="form-control form-control-lg" type="text" placeholder="Please type in the userid">
+				  </div>
+				  <div class="pull-right">
+					  <button type="button" class="btn btn-primary" onclick="callReset()">Reset Jupyter</button>
+					  <button type="button" class="btn btn-primary" onclick="callAPI('practice', '')">Test Practice</button>
+					  <button type="button" class="btn btn-primary" onclick="callAPI('challenge', 'params=AAPL')">Test Challenge</button>
+				  </div>
+				</form>
+			</div>
+		</div>
     </body>
 </html>
