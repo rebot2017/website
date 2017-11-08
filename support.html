@@ -26,6 +26,7 @@
 function callReset() {
 	var resetUri = "http://139.59.231.81:5000/reset/" + document.getElementById('userid').value;
 	openWin(resetUri);
+	return false; // prevent the refresh
 }
 
 function callAPI(page, params) {
