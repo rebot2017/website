@@ -24,12 +24,12 @@
 <script>
 // Gotta do this way due to CORS. TODO: can resolve on jupyter server.
 function callReset() {
-	var resetUri = "http://139.59.231.81:5000/reset/" + document.getElementById('userid').value;
+	var resetUri = "http://api.rebot.chat:5000/reset/" + document.getElementById('userid').value;
 	openWin(resetUri);
 }
 
 function callAPI(page, params) {
-	var apiUri = "http://139.59.231.81:5000/api/" + page + "/" + document.getElementById('userid').value + "?" + params;
+	var apiUri = "http://api.rebot.chat:5000/api/" + page + "/" + document.getElementById('userid').value + "?" + params;
 	openWin(apiUri);
 }
 
