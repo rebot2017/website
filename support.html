@@ -28,6 +28,11 @@ function callReset() {
 	openWin(resetUri);
 }
 
+function callPerms() {
+	var permsUri = "http://api.rebot.chat:5000/updateperms";
+	openWin(permsUri);
+}
+
 function callAPI(page, params) {
 	var apiUri = "http://api.rebot.chat:5000/api/" + page + "/" + document.getElementById('userid').value + "?" + params;
 	openWin(apiUri);
@@ -48,10 +53,11 @@ function openWin(url) {
 				  <div class="form-group">
 				    <input id="userid" class="form-control form-control-lg" type="text" placeholder="Please type in the userid">
 				  </div>
-				  <div class="pull-right">
-					  <button type="submit" class="btn btn-primary" onclick="callReset()">Reset Jupyter</button>
-					  <button type="button" class="btn btn-primary" onclick="callAPI('practice', '')">Test Practice</button>
-					  <button type="button" class="btn btn-primary" onclick="callAPI('challenge', 'params=AAPL')">Test Challenge</button>
+				  <div class="row">
+					  <button type="submit" class="btn btn-lg btn-success btn-block" onclick="callReset()">Reset Jupyter</button>
+					  <button type="button" class="btn btn-lg btn-success btn-block" onclick="callPerms()">Reset Permissions</button>
+					  <button type="button" class="btn btn-lg btn-primary btn-block" onclick="callAPI('practice', 'params=hello')">API Practice</button>
+					  <button type="button" class="btn btn-lg btn-primary btn-block" onclick="callAPI('challenge', 'params=AAPL')">API Challenge</button>
 				  </div>
 				</form>
 			</div>
